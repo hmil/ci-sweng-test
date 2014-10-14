@@ -1,0 +1,21 @@
+[EMMA v2.0.5312 report, generated Wed Oct 15 00:06:52 CEST 2014]
+-------------------------------------------------------------------------------
+OVERALL COVERAGE SUMMARY:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+80 % (4/5)!	71 % (12/17)	52 % (212/405)!	63 % (42,3/67)!	all classes
+
+OVERALL STATS SUMMARY:
+
+total packages:	2
+total classes:	5
+total methods:	17
+total executable files:	3
+total executable lines:	67
+
+COVERAGE BREAKDOWN BY PACKAGE:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+75 % (3/4)!	64 % (9/14)!	51 % (197/390)!	59 % (35,3/60)!	epfl.sweng.testing
+100 % (1/1)	100 % (3/3)	100 % (15/15)	100 % (7/7)	ch.epfl.bookie.travdroid
+-------------------------------------------------------------------------------
