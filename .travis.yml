@@ -6,7 +6,7 @@ android:
   components:
     - build-tools-20.0.0
     - android-20
-    - sys-img-armeabi-v7a-20
+    - sys-img-armeabi-v7a-android-20
 
 
 script: "cd scripts && ./ci-suite.sh"
