@@ -1,0 +1,12 @@
+# We'll construct this configuration on top of the android VM
+# since it's far easier to install Python than the jvm + adt + whatevs android needs
+language: android
+
+android:
+  components:
+    - build-tools-20.0.0
+    - android-20
+    - sys-img-armeabi-v7a-20
+
+
+script: "cd scripts && ./ci-suite.sh"
