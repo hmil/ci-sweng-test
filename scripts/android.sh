@@ -5,7 +5,7 @@
 # this scripts allows all scripts to run in git bash on windows as well as natively on linux
 
 a="$@"
-if [ `uname` == 'Linux' ]; then
+if [ "$(uname)" == "Darwin" ]; then
   android "$@"
 else
   cmd "/C android $a"
