@@ -17,10 +17,8 @@ EOF
 exit 1
 fi
 target_sdk="$1"
-shift
-if [ ! -z "$1" ]; then base_name="$1" ; fi
-shift
-if [ ! -z "$1" ]; then avd_options="$@" ; fi
+if [ ! -z "$2" ]; then shift; base_name="$1" ; fi
+if [ ! -z "$1" ]; then shift; avd_options="$@" ; fi
 
 echo "Creating avd for android-$target_sdk"
 
