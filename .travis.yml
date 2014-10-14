@@ -1,4 +1,4 @@
-# We'll construct this configuration on top of the android VM
+# We'll construct this configuration on top of the android Travis VM
 # since it's far easier to install Python than the jvm + adt + whatevs android needs
 language: android
 
@@ -8,5 +8,8 @@ android:
     - android-19
     - sys-img-armeabi-v7a-android-19
 
+before_script: "./scripts/setup-devices.sh"
 
-script: "cd scripts && ./ci-suite.sh"
+script: "./scripts/ci-suite.sh"
+
+#after_script: ""
