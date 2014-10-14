@@ -1,6 +1,6 @@
 #!/bin/sh
 
-targetSDK=20
+targetSDK=19
 avd_options='--skin WVGA800'
 
 echo "Creating avd for android-$targetSDK"
