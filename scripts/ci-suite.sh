@@ -1,7 +1,9 @@
 #!/bin/sh
 
+env
+
 ant_cmd="ant clean emma debug install test"
-adt_sdk=`which android.bat | sed "s/\/tools\/android.bat$//"`
+adt_sdk=$ANDROID_HOME #`which android.bat | sed "s/\/tools\/android.bat$//"`
 
 echo "sdk location: $adt_sdk"
 
