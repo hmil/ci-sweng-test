@@ -11,7 +11,7 @@ cat `which android-wait-for-emulator`
 
 # start tests
 android update project --path Travdroid --target android-19
-android update project --path Travdroid --target android-19
+android update project --path TravdroidTest --target android-19
 android update test-project --path TravdroidTest --main ../TravdroidTest
 cd TravdroidTest
 echo "Running $ant_cmd"
