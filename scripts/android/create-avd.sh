@@ -24,4 +24,4 @@ echo "Creating avd for android-$target_sdk"
 
 # android will ask if we want to create custom hardware with default 'no'.
 # so we send a return keypress to say no.
-echo 'no' | android create avd --force -n "$base_name-$target_sdk" -t "android-$target_sdk" --abi armeabi-v7a $avd_options
+echo 'no' | android create avd --force -n "$base_name-$target_sdk" -t "android-$target_sdk" --abi x86 $avd_options

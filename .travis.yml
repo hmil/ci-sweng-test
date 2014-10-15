@@ -10,6 +10,7 @@ android:
     - build-tools-20.0.0
     - android-19
     - sys-img-armeabi-v7a-android-19
+    - sys-img-x86-android-19
 
 before_script: "$SCRIPTS_DIR/ci-setup.sh"
 script: "$SCRIPTS_DIR/ci-tests.sh"
