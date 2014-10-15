@@ -6,12 +6,12 @@ ant_cmd="ant clean emma debug install test"
 echo "printing android-wait-for-emulator"
 cat `which android-wait-for-emulator`
 # start emulator
-emulator -avd avd-19 -no-skin -no-audio -no-window &
-android-wait-for-emulator
+#emulator -avd avd-19 -no-skin -no-audio -no-window &
+#android-wait-for-emulator
 
 # start tests
-android update project --path Travdroid
-android update project --path Travdroid
+android update project --path Travdroid --target android-19
+android update project --path Travdroid --target android-19
 android update test-project --path TravdroidTest --main ../TravdroidTest
 cd TravdroidTest
 echo "Running $ant_cmd"
