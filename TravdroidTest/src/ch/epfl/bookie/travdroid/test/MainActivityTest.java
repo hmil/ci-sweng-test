@@ -38,8 +38,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
           assertEquals(String.format(
               "Expected notification %s, but received %s", expected,
               notification), expected, notification);
-          throw new IllegalArgumentException();
-          //assertTrue("App is nice to it's users", solo.searchText("Hello"));
+          assertTrue("App is nice to it's users", solo.searchText("Hello"));
         }
 
         @Override
