@@ -1,21 +1,17 @@
 #!/bin/sh
 
+echo "Running with the following env"
 env
 
 ant_cmd="ant clean emma debug install test"
-adt_sdk=$ANDROID_HOME #`which android.bat | sed "s/\/tools\/android.bat$//"`
 
-echo "sdk location: $adt_sdk"
 
-# Debug information
-echo "printing android-wait-for-emulator"
-cat `which android-wait-for-emulator`
 # start emulator
 emulator -avd avd-19 -no-skin -no-audio -no-window &
-#android-wait-for-emulator
+android-wait-for-emulator
 
 # start tests
-echo "sdk.dir=$adt_sdk" | tee TravdroidTest/local.properties | tee Travdroid/local.properties
+echo "sdk.dir=$ANDROID_HOME" | tee TravdroidTest/local.properties | tee Travdroid/local.properties
 
 cd TravdroidTest
 echo "Running $ant_cmd"
