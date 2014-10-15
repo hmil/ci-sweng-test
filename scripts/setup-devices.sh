@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./scripts/create-avd.sh 19
+$SCRIPTS_DIR/android/create-avd.sh 19

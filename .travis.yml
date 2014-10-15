@@ -2,14 +2,16 @@
 # since it's far easier to install Python than the jvm + adt + whatevs android needs
 language: android
 
+env:
+  - REPO_DIR=$TRAVIS_BUILD_DIR
+  - SCRIPTS_DIR=$REPO_DIR/scripts
+
 android:
   components:
     - build-tools-20.0.0
     - android-19
     - sys-img-armeabi-v7a-android-19
 
-before_script: "./scripts/setup-devices.sh"
+before_script: "$SCRIPTS_DIR/ci-setup.sh"
+script: "$SCRIPTS_DIR/ci-tests.sh"
 
-script: "./scripts/ci-suite.sh"
-
-#after_script: ""
