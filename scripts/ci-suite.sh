@@ -10,9 +10,9 @@ emulator -avd avd-19 -no-skin -no-audio -no-window &
 android-wait-for-emulator
 
 # start tests
-android update project --path TravDroid
-android update project --path TravDroid
-android update test-project --path TravDroidTest --main ../TravdroidTest
+android update project --path Travdroid
+android update project --path Travdroid
+android update test-project --path TravdroidTest --main ../TravdroidTest
 cd TravdroidTest
 echo "Running $ant_cmd"
 result=`$ant_cmd`
