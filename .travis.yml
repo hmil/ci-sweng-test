@@ -3,8 +3,7 @@
 language: android
 
 env:
-  - REPO_DIR=$TRAVIS_BUILD_DIR
-  - SCRIPTS_DIR=$REPO_DIR/scripts
+  - REPO_DIR=$TRAVIS_BUILD_DIR SCRIPTS_DIR=$REPO_DIR/scripts
 
 android:
   components:
